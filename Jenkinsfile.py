@@ -4,7 +4,7 @@ pipeline {
 		stage("Run the code!") {
 			steps {
 				sh """
-					python calculator.py
+					python Jenkinsfile.py
 				"""
 			} //steps
 		} //stage
