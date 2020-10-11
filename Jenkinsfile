@@ -4,14 +4,14 @@ pipeline {
 		stage("Run the code!") {
 			steps {
 				sh """
-					python Game.py
+					python3 Game.py
 				"""
 			} //steps
 		} //stage
 		stage("Run unit tests") {
 			steps {
 				sh """
-				    pytest
+				    pytest3 -m pytest
 				"""	
 			}
 		}
